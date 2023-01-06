@@ -17,9 +17,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="app__about">
+    <>
       <h2 className="head-text">
-        I know that <span>Good Apps</span><br/> means <span>Good Business</span>
+        I know that <span>Good Projects</span><br/> means <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">
@@ -41,7 +41,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

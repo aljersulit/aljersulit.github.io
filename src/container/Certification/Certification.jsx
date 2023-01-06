@@ -6,13 +6,13 @@ import "swiper/css/pagination";
 import { urlFor, client } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Certification.scss';
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Keyboard } from "swiper";
 
 const Certifications = () => {
   const [certifications, setCertifications] = useState([]);
   console.log(certifications)
   useEffect(() => {
-    const query = '*[_type == "certification"]';
+    const query = '*[_type == "certifications"]';
 
     client.fetch(query)
       .then(data => setCertifications(data))
@@ -20,15 +20,15 @@ const Certifications = () => {
 
   return (
     <>
-      <h2 className='head-text'>Certifications</h2>
+      <h2 className='head-text'>My <span>Certifications</span></h2>
 
       <Swiper
         cssMode={true}
+        spaceBetween={100}
         navigation={true}
-        pagination={true}
-        mousewheel={true}
+        pagination={{clickable: true}}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Pagination, Keyboard]}
         className="app__certification-container app__flex"
       >
         {certifications.map((certificate) => (

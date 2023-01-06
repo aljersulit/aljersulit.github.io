@@ -9,7 +9,6 @@ const Skills = () => {
   const [skills, setskills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(skillsQuery)
@@ -20,7 +19,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className='head-text'>Skills</h2>
+      <h2 className='head-text'>My <span>Skills</span> and <span>Knowledge</span></h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>

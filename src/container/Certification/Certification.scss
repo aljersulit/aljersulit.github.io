@@ -5,12 +5,20 @@
 }
 
 .app__certifications > h2 {
-    margin-top: 1.8rem;
+    margin-top: 2.5rem;
 }
 
 .app__certification-container {
     width: 52vw;
-    margin-top: 0.5rem;
+    margin-top: 3rem;
+
+    @media screen and (max-width: 900px) {
+      width: 70vw;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 92vw;
+    }
 }
 
 .swiper-slide {
