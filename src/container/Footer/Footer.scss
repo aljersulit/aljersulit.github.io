@@ -49,6 +49,10 @@
         @media screen and (max-width: 450px) {
             width: 100%;
         }
+
+        @media screen and (max-width: 560px) {
+            min-width: 250px;
+        }
     }
 
     @media screen and (max-width: 768px) {

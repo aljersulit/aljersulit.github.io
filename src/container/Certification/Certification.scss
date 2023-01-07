@@ -16,6 +16,10 @@
       width: 70vw;
     }
 
+    @media screen and (max-width: 650px) {
+      width: 62vw;
+    }
+
     @media screen and (max-width: 500px) {
       width: 92vw;
     }

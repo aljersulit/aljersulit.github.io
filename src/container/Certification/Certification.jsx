@@ -33,7 +33,7 @@ const Certifications = () => {
       >
         {certifications.map((certificate) => (
           <SwiperSlide key={certificate.title}>
-            <a href={certificate.url} target="_blank">
+            <a href={certificate.url} target="_blank" rel="noreferrer">
               <img src={urlFor(certificate.image)} alt={certificate.name} />
             </a>
           </SwiperSlide>

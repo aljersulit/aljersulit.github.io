@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
-import { images } from '../../constants'
+import cv from '../../assets/Sulit,Aldrin_Jerome_CV.pdf';
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client, urlFor } from '../../client'
 import "./About.scss";
@@ -26,17 +25,17 @@ const About = () => {
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <div
-            className="app__profile-item app__flex"
+            className="app__profile-item"
             key={about.title + index}
           >
             
-            <img src={urlFor(about.imgUrl)} alt="My about photo" />
+            <img src={urlFor(about.imgUrl)} alt="Me and my dog" />
             
             <div className="app__profile-description">
               <p className="p-text">
                 {about.description}
               </p>
-              <a href="#" download>Download CV</a>
+              <a href={cv} download>Download CV</a>
             </div>
             
           </div>

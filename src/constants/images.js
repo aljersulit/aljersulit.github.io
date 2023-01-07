@@ -13,7 +13,8 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
 import circle from '../assets/circle.svg';
-import bg from '../assets/bg.png'
+import bg from '../assets/bg.png';
+import ajs from '../assets/ajs_logo.png';
 
 export default {
     bgIMG,
@@ -31,5 +32,6 @@ export default {
     python,
     react,
     sass,
-    bg
+    bg,
+    ajs
 }
