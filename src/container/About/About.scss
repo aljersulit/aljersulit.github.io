@@ -11,6 +11,10 @@
   height: 100%;
   margin-top: 4rem;
   padding: 0 2rem;
+  
+  @media screen and (max-width: 700px) {
+    padding: 0;
+  }
 }
 
 .app__profile-item {
@@ -53,6 +57,7 @@
 
       color: #fff;
       font-weight: 700;
+      text-align: center;
       letter-spacing: -0.025em;
       text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 
